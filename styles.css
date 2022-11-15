@@ -1,0 +1,120 @@
+.baszamine{
+    background-color: #b580d1;
+    text-align: center;
+    color: white;
+}
+.footer{
+    text-align: left;
+    border: #b580d1;
+    border: 0px;
+    box-shadow: 3px 3px 15px rgb(168, 119, 194) inset;
+}
+/* .todolist{
+    background-color: white;
+
+}
+.listdone{
+    background-color: #6cc24a;
+}
+.dontlist{
+    background-color:#e0457b ;
+} */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+}
+.flex-container > div {
+    width: 300px;
+    margin: 70px;
+    /* line-height: 400px; */
+    color: black;
+    text-align: left;
+  }
+  .plus {
+    --b: 4px; /* the thickness */
+    width: 20px; /* the size */
+    aspect-ratio: 1;
+    border: 10px solid #b580d1; /* the outer space */
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#b580d1 90deg,#fff 0) 
+      calc(100% + var(--b)/2) calc(100% + var(--b)/2)/
+      calc(50%  + var(--b))   calc(50%  + var(--b));
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center
+  }
+  
+  .alt {
+    border: none;
+    margin: 10px auto;
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#fff 90deg,#b580d1 0) 
+      calc(100% + var(--b)/2) calc(100% + var(--b)/2)/
+      calc(50%  + var(--b))   calc(50%  + var(--b));
+      text-align: center
+  }
+  /* .mdiv {
+    height: 25px;
+    width: 1px;
+    margin-left: 12px; 
+    background-color: #b580d1;
+    transform: rotate(45deg);
+    Z-index: 1;
+  }
+  
+  .md {
+    padding: 0px;
+    height: 25px;
+    width: 1px;
+    margin: 0px;
+    border-color: #b580d1;
+    transform: rotate(90deg);
+    Z-index: 2;
+  } */
+  .close{
+    margin-right: 0;
+    margin-left: auto;
+    border: none;
+    padding: 3px;
+    background-color: #fff;
+  }
+  .svg{
+    color: #b580d1; 
+    width: 20px;
+  }
+  .svg:hover{
+    width: 23px;
+  }
+  /* .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    /* position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  } */
