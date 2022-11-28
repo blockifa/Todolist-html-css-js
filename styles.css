@@ -1,98 +1,119 @@
-.baszamine{
-    background-color: #b580d1;
-    text-align: center;
-    color: white;
+body {
+  background-color: #b580d1;
+  text-align: center;
+  color: white;
 }
-.footer{
-    text-align: left;
-    border: #b580d1;
-    border: 0px;
-    box-shadow: 3px 3px 15px rgb(168, 119, 194) inset;
+header {
+  text-shadow: 2px 2px 4px #000000;
+  margin-top: 30px;
 }
-/* .todolist{
-    background-color: white;
-
+h1 {
+  text-align: center;
+  text-shadow: 1px 1px 4px #000000;
 }
-.listdone{
-    background-color: #6cc24a;
-}
-.dontlist{
-    background-color:#e0457b ;
-} */
 .flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    /* margin-left: 20px;
-    margin-right: 20px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  align-items: start;
 }
 .flex-container > div {
-    width: 300px;
-    margin: 70px;
-    /* line-height: 400px; */
-    color: black;
-    text-align: left;
-  }
-  .plus {
-    --b: 4px; /* the thickness */
-    width: 20px; /* the size */
-    aspect-ratio: 1;
-    border: 10px solid #b580d1; /* the outer space */
-    background:
-      conic-gradient(from 90deg at var(--b) var(--b),#b580d1 90deg,#fff 0) 
-      calc(100% + var(--b)/2) calc(100% + var(--b)/2)/
-      calc(50%  + var(--b))   calc(50%  + var(--b));
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
-    text-align: center
-  }
-  
-  .alt {
-    border: none;
-    margin: 10px auto;
-    background:
-      conic-gradient(from 90deg at var(--b) var(--b),#fff 90deg,#b580d1 0) 
-      calc(100% + var(--b)/2) calc(100% + var(--b)/2)/
-      calc(50%  + var(--b))   calc(50%  + var(--b));
-      text-align: center
-  }
-  /* .mdiv {
-    height: 25px;
-    width: 1px;
-    margin-left: 12px; 
-    background-color: #b580d1;
-    transform: rotate(45deg);
-    Z-index: 1;
-  }
-  
-  .md {
-    padding: 0px;
-    height: 25px;
-    width: 1px;
-    margin: 0px;
-    border-color: #b580d1;
-    transform: rotate(90deg);
-    Z-index: 2;
-  } */
-  .close{
-    margin-right: 0;
-    margin-left: auto;
-    border: none;
-    padding: 3px;
-    background-color: #fff;
-  }
-  .svg{
-    color: #b580d1; 
-    width: 20px;
-  }
-  .svg:hover{
-    width: 23px;
-  }
-  /* .tooltip {
+  width: 300px;
+  margin: 70px;
+  color: black;
+  text-align: left;
+}
+.flex-container > div:first-child {
+  background-color: white;
+}
+.flex-container > div:nth-child(2) {
+  background-color: #e0457b;
+}
+button {
+  border: none;
+  padding: 0;
+  background-color: white;
+  margin: 0;
+}
+.Square {
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  margin: 10px 15px;
+  cursor: pointer;
+}
+input {
+  border: none;
+  padding: 0;
+  margin: auto auto;
+  background-color: #fff;
+  border-bottom: 2px dashed black;
+}
+ul {
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+}
+.plus {
+  --b: 4px; /* the thickness */
+  width: 20px; /* the size */
+  aspect-ratio: 1;
+  border: 10px solid #b580d1; /* the outer space */
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #b580d1 90deg,
+      #fff 0
+    )
+    calc(100% + var(--b) / 2) calc(100% + var(--b) / 2) / calc(50% + var(--b))
+    calc(50% + var(--b));
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  text-align: center;
+}
+
+.alt {
+  border: none;
+  margin: 20px auto;
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #fff 90deg,
+      #b580d1 0
+    )
+    calc(100% + var(--b) / 2) calc(100% + var(--b) / 2) / calc(50% + var(--b))
+    calc(50% + var(--b));
+  text-align: center;
+}
+.dltstyle {
+  margin-right: 0;
+  margin-left: auto;
+  border: none;
+  padding: 3px;
+  background-color: #fff;
+}
+.svg {
+  width: 20px;
+}
+.svg:hover {
+  width: 23px;
+}
+footer {
+  text-align: left;
+  border: #b580d1;
+  border: 0px;
+  box-shadow: 3px 3px 15px rgb(168, 119, 194) inset;
+}
+footer p {
+  padding: 10px;
+  padding-left: 20px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+/* .tooltip {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
@@ -108,7 +129,7 @@
     padding: 5px 0;
     
     /* Position the tooltip */
-    /* position: absolute;
+/* position: absolute;
     z-index: 1;
     top: 100%;
     left: 50%;
