@@ -1,4 +1,0 @@
-const element = id.nextElementSibling;
-      element.style.color = squareColor[i%3];
-      element.style.border = "none";
-      element.disabled = true;  }
